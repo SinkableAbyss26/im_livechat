@@ -1,7 +1,8 @@
 // Duplicate :root/body rules into :host ruleset in order to make them work
 // in the shadow DOM.
 
-$o-livechat-font-size: 14px !default;
+$o-livechat-font-size: 1.4rem !default;
+$font-size-root: 62.5% !default;
 
 // Source: bootstrap/scss/_root.scss
 :host,
