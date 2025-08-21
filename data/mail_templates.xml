@@ -10,15 +10,15 @@
         <td align="center" style="min-width: 590px;">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: white; padding: 0; border-collapse:separate;">
                 <tr><td valign="middle">
-                    <span style="font-size: 10px;">Livechat Conversation</span><br/>
-                    <span style="font-size: 20px; font-weight: bold;">
+                    <span style="font-size: 1rem;">Livechat Conversation</span><br/>
+                    <span style="font-size: 2rem; font-weight: bold;">
                         <t t-esc="company.name"/>
                     </span>
                 </td><td valign="middle" align="right" t-if="not company.uses_default_logo">
                     <img t-att-src="'/logo.png?company=%s' % company.id" style="padding: 0px; margin: 0px; height: 48px;" t-att-alt="'%s' % company.name"/>
                 </td></tr>
                 <tr><td colspan="2" style="text-align:center;">
-                  <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:4px 0px 32px 0px;"/>
+                  <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0;min-height:1px;line-height:0; margin:4px 0px 32px 0px;"/>
                 </td></tr>
             </table>
         </td>
@@ -30,7 +30,7 @@
     <t t-set="left" t-value="'border-left: thin solid #dee2e6;'" />
     <tr>
         <td style="padding: 0 50px;">
-            <div style="font-size: 13px; padding: 10px 0;">
+            <div style="font-size: 1.3rem; padding: 10px 0;">
                 <span>Hello,</span><br />Here's a copy of your conversation with
                 <!-- sudo: res.users - visitor can access the name of the operator -->
                 <span t-esc="channel.livechat_operator_id.sudo().user_livechat_username or channel.livechat_operator_id.sudo().name"/>, on the
@@ -52,16 +52,16 @@
                         <td t-att-style="'padding-left: 5px; margin: 0px;' + top">
                             <strong t-esc="author_name"/>
                         </td>
-                        <td  t-att-style="'font-size: 13px; padding: 5px;' + top + right" align="right"><span t-field="message.date"/></td>
+                        <td  t-att-style="'font-size: 1.3rem; padding: 5px;' + top + right" align="right"><span t-field="message.date"/></td>
                     </tr>
                     <tr>
                         <td valign="top" colspan="2" t-att-style="'padding-left: 5px;' + bottom + right">
-                            <span t-field="message.body" style="font-size: 13px;"/>
+                            <span t-field="message.body" style="font-size: 1.3rem;"/>
                         </td>
                     </tr>
                 </t>
             </table>
-            <div style="font-size: 13px; padding: 30px 0;">
+            <div style="font-size: 1.3rem; padding: 30px 0;">
                 <span>Best regards,</span><br /><br />
                 <span t-field="company.name"/>
             </div>
@@ -69,8 +69,8 @@
     </tr>
     <!-- FOOTER -->
     <tr>
-        <td align="center" style="min-width: 590px; padding: 0 8px 0 8px; font-size:11px;">
-            <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 4px 0px;"/>
+        <td align="center" style="min-width: 590px; padding: 0 8px 0 8px; font-size:1.1rem;">
+            <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0;min-height:1px;line-height:0; margin: 16px 0px 4px 0px;"/>
             <b t-esc="company.name"/><br/>
             <div style="color: #999999;">
                 <t t-esc="company.phone"/>

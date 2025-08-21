@@ -27,7 +27,7 @@
                     <style type="text/css">
                         body {
                             height: 100%;
-                            font-size: 16px;
+                            font-size: 1.6rem;
                             font-weight: 400;
                             font-family: "Lato", "Lucida Grande", "Helvetica neue", "Helvetica", "Verdana", "Arial", sans-serif;
                             overflow: hidden;
@@ -63,12 +63,12 @@
                             text-align: center;
                         }
                         .channel_name {
-                            font-size: clamp(2.5rem, 6vw, 3.5rem);
+                            font-size: clamp(4rem, 6vw, 5.6rem);
                             overflow-wrap: break-word;
                         }
                         .main div {
                             font-style: italic;
-                            font-size: 1rem;
+                            font-size: 1.6rem;
                         }
                     </style>
                 </head>
